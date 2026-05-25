@@ -1,0 +1,66 @@
+{
+  "name": "bcli",
+  "version": "0.1.0",
+  "description": "Opinionated framework for building interactive CLI apps — by Billy",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./test": {
+      "import": "./dist/test/index.js",
+      "types": "./dist/test/index.d.ts"
+    }
+  },
+  "bin": {
+    "bcli": "./dist/cli.js",
+    "create-bcli-app": "./dist/create-bcli-app.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/cli.ts src/create-bcli-app.ts src/test/index.ts --dts --format esm --clean",
+    "dev": "tsup --watch src/index.ts src/cli.ts src/create-bcli-app.ts src/test/index.ts --dts --format esm",
+    "lint": "biome check src/",
+    "lint:fix": "biome check --apply src/",
+    "format": "biome format --write src/",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-spinners": "^3.1.0",
+    "cli-table3": "^0.6.5",
+    "iconv-lite": "^0.6.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@types/cli-table": "^0.3.4",
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.0",
+    "vitepress": "^1.6.4",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cli",
+    "framework",
+    "interactive",
+    "terminal",
+    "opinionated",
+    "billy",
+    "bcli"
+  ]
+}
