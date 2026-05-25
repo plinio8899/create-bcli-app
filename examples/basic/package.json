@@ -1,0 +1,12 @@
+{
+  "name": "example-basic",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node src/cli.js"
+  },
+  "dependencies": {
+    "bcli": "file:../.."
+  }
+}
