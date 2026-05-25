@@ -1,12 +1,16 @@
 <div align="center">
   <br/>
   <pre>
-   ___ _     _        __ _    __ _
-  | _ ) |___| |___   / _| |  / _(_)
-  | _ \ / -_) / -_) |  _| |_|  _| |
-  |___/_\___|_\___| |_| |____(_)_|
+██████╗  ██████╗██╗     ██╗
+██╔══██╗██╔════╝██║     ██║
+██████╔╝██║     ██║     ██║
+██╔══██╗██║     ██║     ██║
+██████╔╝╚██████╗███████╗██║
+╚═════╝  ╚═════╝╚══════╝╚═╝
   </pre>
   <p><strong>Opinionated framework for building interactive CLI apps — by Billy.</strong></p>
+
+  <a href="https://plinio8899.github.io/create-bcli-app/"><strong>📖 Docs</strong></a>
 
   [![npm version](https://img.shields.io/npm/v/bcli)](https://www.npmjs.com/package/bcli)
   [![npm downloads](https://img.shields.io/npm/dw/bcli)](https://www.npmjs.com/package/bcli)
