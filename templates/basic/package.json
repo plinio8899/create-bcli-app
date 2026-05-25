@@ -1,0 +1,20 @@
+{
+  "name": "my-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A CLI built with Craft",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch src/index.ts --dts --format esm",
+    "build": "tsup src/index.ts --dts --format esm --clean",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "bcli": "^0.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.0"
+  }
+}
